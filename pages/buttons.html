@@ -17,6 +17,22 @@
     }
   </style>
   <script src="../js/theme-toggle.js"></script>
+  <script>
+    function toggleCode(button) {
+      const codeContent = button.parentElement.querySelector('.code-content');
+      const isShown = codeContent.classList.contains('show');
+      
+      if (isShown) {
+        codeContent.classList.remove('show');
+        button.classList.remove('active');
+        button.innerHTML = '<span class="material-symbols-outlined">code</span>Show code';
+      } else {
+        codeContent.classList.add('show');
+        button.classList.add('active');
+        button.innerHTML = '<span class="material-symbols-outlined">code</span>Hide code';
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="site-container">
@@ -82,6 +98,23 @@
               Preview
             </button>
           </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-primary btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;visibility&lt;/span&gt;
+  Preview
+&lt;/button&gt;
+
+&lt;button class="btn btn-primary btn-medium" disabled&gt;
+  &lt;span class="material-symbols-outlined"&gt;visibility&lt;/span&gt;
+  Preview
+&lt;/button&gt;</div>
+            </div>
+          </div>
         </div>
 
         <div class="preview-box">
@@ -95,6 +128,18 @@
               <span class="material-symbols-outlined">visibility</span>
               Preview
             </button>
+          </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-secondary btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;visibility&lt;/span&gt;
+  Preview
+&lt;/button&gt;</div>
+            </div>
           </div>
         </div>
 
@@ -110,6 +155,18 @@
               Delete
             </button>
           </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-destructive btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;delete&lt;/span&gt;
+  Delete
+&lt;/button&gt;</div>
+            </div>
+          </div>
         </div>
 
         <div class="preview-box">
@@ -123,6 +180,18 @@
               <span class="material-symbols-outlined">check_circle</span>
               Confirm
             </button>
+          </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-success btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;check_circle&lt;/span&gt;
+  Confirm
+&lt;/button&gt;</div>
+            </div>
           </div>
         </div>
       </section>
@@ -139,6 +208,17 @@
             <button class="btn btn-primary btn-small">Small</button>
             <button class="btn btn-primary btn-medium">Medium</button>
             <button class="btn btn-primary btn-large">Large</button>
+          </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-primary btn-small"&gt;Small&lt;/button&gt;
+&lt;button class="btn btn-primary btn-medium"&gt;Medium&lt;/button&gt;
+&lt;button class="btn btn-primary btn-large"&gt;Large&lt;/button&gt;</div>
+            </div>
           </div>
         </div>
       </section>
@@ -162,6 +242,23 @@
               Add Item
             </button>
           </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-primary btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;check&lt;/span&gt;
+  Confirm
+&lt;/button&gt;
+
+&lt;button class="btn btn-secondary btn-medium"&gt;
+  &lt;span class="material-symbols-outlined"&gt;add&lt;/span&gt;
+  Add Item
+&lt;/button&gt;</div>
+            </div>
+          </div>
         </div>
 
         <div class="preview-box">
@@ -176,6 +273,17 @@
             <button class="btn btn-destructive btn-medium" style="padding: 10px;">
               <span class="material-symbols-outlined">close</span>
             </button>
+          </div>
+          <div class="code-toggle">
+            <button class="code-toggle-btn" onclick="toggleCode(this)">
+              <span class="material-symbols-outlined">code</span>
+              Show code
+            </button>
+            <div class="code-content">
+              <div class="code-block">&lt;button class="btn btn-primary btn-medium" style="padding: 10px;"&gt;
+  &lt;span class="material-symbols-outlined"&gt;visibility&lt;/span&gt;
+&lt;/button&gt;</div>
+            </div>
           </div>
         </div>
       </section>
