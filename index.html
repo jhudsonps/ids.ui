@@ -7,12 +7,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
   <link rel="stylesheet" href="css/design-system.css">
   <link rel="stylesheet" href="css/site.css">
+  <script src="js/theme-toggle.js"></script>
 </head>
 <body>
   <div class="site-container">
     
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button class="theme-toggle-btn active" data-theme="dark">
+        <span class="material-symbols-outlined" style="font-size: 16px;">dark_mode</span>
+        Dark
+      </button>
+      <button class="theme-toggle-btn" data-theme="light">
+        <span class="material-symbols-outlined" style="font-size: 16px;">light_mode</span>
+        Light
+      </button>
+    </div>
+
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
       <div class="sidebar-logo">

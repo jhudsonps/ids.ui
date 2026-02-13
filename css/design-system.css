@@ -3,7 +3,7 @@
    ======================================== */
 
 :root {
-  /* System Colors - Greys */
+  /* System Colors - Greys (Dark Mode) */
   --grey-200: #000000;
   --grey-120: #141516;
   --grey-100: #212529;
@@ -65,6 +65,72 @@
   --amber-30: #ff990a;
   --amber-20: #f1a10d;
   --amber-10: #fef3dd;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+  /* Greys - Inverted for light mode */
+  --grey-200: #ffffff;
+  --grey-120: #fcfcfc;
+  --grey-100: #f8f9fa;
+  --grey-90: #e9ecef;
+  --grey-80: #dee2e6;
+  --grey-70: #ced4da;
+  --grey-60: #adb5bd;
+  --grey-50: #6c757d;
+  --grey-40: #495057;
+  --grey-30: #343a40;
+  --grey-20: #212529;
+  --grey-10: #141516;
+  --grey-0: #000000;
+
+  /* Blues - Light mode variants */
+  --blue-100: #f0f7ff;
+  --blue-90: #edf6ff;
+  --blue-80: #e1f0ff;
+  --blue-70: #cde7ff;
+  --blue-60: #99ceff;
+  --blue-50: #52aeff;
+  --blue-40: #3168f6;
+  --blue-30: #0067d6;
+  --blue-20: #0060d1;
+  --blue-10: #00254d;
+
+  /* Greens - Light mode variants */
+  --green-100: #effbef;
+  --green-90: #eafaea;
+  --green-80: #dcf6dc;
+  --green-70: #c8f1c9;
+  --green-60: #99e59f;
+  --green-50: #6cda76;
+  --green-40: #46a758;
+  --green-30: #388e4a;
+  --green-20: #297c3b;
+  --green-10: #1b311e;
+
+  /* Reds - Light mode variants */
+  --red-100: #fff0f0;
+  --red-90: #ffebeb;
+  --red-80: #ffe5e5;
+  --red-70: #fdd8d8;
+  --red-60: #f8baba;
+  --red-50: #f87274;
+  --red-40: #e5484d;
+  --red-30: #da3036;
+  --red-20: #ca2a30;
+  --red-10: #381316;
+
+  /* Ambers - Light mode variants */
+  --amber-100: #fff6e5;
+  --amber-90: #fff4d5;
+  --amber-80: #fef0cd;
+  --amber-70: #ffdd8f;
+  --amber-60: #ffc96b;
+  --amber-50: #f5b047;
+  --amber-40: #ffb224;
+  --amber-30: #ff990a;
+  --amber-20: #a35200;
+  --amber-10: #4e2009;
 }
 
 /* ========================================
