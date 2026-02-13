@@ -1,0 +1,260 @@
+/* ========================================
+   SITE LAYOUT
+   ======================================== */
+
+.site-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ========================================
+   SIDEBAR NAVIGATION
+   ======================================== */
+
+.sidebar {
+  width: 240px;
+  background: var(--grey-120);
+  border-right: 1px solid var(--grey-90);
+  padding: 24px 0;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-logo {
+  padding: 0 24px 24px;
+  border-bottom: 1px solid var(--grey-90);
+  margin-bottom: 24px;
+}
+
+.sidebar-logo h1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--grey-20);
+}
+
+.nav-section {
+  margin-bottom: 24px;
+}
+
+.nav-section-title {
+  padding: 0 24px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--grey-70);
+  margin-bottom: 8px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 24px;
+  color: var(--grey-50);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--grey-20);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nav-link.active {
+  color: var(--grey-20);
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+
+.main-content {
+  margin-left: 240px;
+  flex: 1;
+  padding: 60px 80px;
+  max-width: 1200px;
+}
+
+.page-header {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--grey-90);
+}
+
+.page-title {
+  margin-bottom: 8px;
+}
+
+.page-description {
+  color: var(--grey-60);
+}
+
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  margin-bottom: 8px;
+}
+
+.section-description {
+  color: var(--grey-60);
+  font-size: 14px;
+}
+
+/* ========================================
+   COLOR GRID
+   ======================================== */
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.color-swatch {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-box {
+  width: 100%;
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 1px solid var(--grey-90);
+}
+
+.color-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--grey-40);
+  margin-bottom: 4px;
+}
+
+.color-value {
+  font-size: 12px;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  color: var(--grey-70);
+}
+
+/* ========================================
+   COMPONENT PREVIEW
+   ======================================== */
+
+.preview-section {
+  margin-top: 24px;
+}
+
+.preview-box {
+  background: var(--grey-120);
+  border: 1px solid var(--grey-90);
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+.preview-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.preview-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--grey-70);
+  margin-bottom: 16px;
+}
+
+/* ========================================
+   CODE BLOCK
+   ======================================== */
+
+.code-block {
+  background: var(--grey-120);
+  border: 1px solid var(--grey-90);
+  border-radius: 8px;
+  padding: 20px;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  color: var(--grey-40);
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.code-block code {
+  color: var(--grey-40);
+}
+
+/* ========================================
+   PROPS TABLE
+   ======================================== */
+
+.props-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.props-table th {
+  text-align: left;
+  padding: 12px 16px;
+  background: var(--grey-120);
+  border-bottom: 1px solid var(--grey-90);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--grey-60);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.props-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--grey-90);
+  font-size: 14px;
+  color: var(--grey-50);
+}
+
+.props-table td code {
+  background: var(--grey-120);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--grey-30);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,294 @@
+/* ========================================
+   DESIGN TOKENS
+   ======================================== */
+
+:root {
+  /* System Colors - Greys */
+  --grey-200: #000000;
+  --grey-120: #141516;
+  --grey-100: #212529;
+  --grey-90: #343a40;
+  --grey-80: #495057;
+  --grey-70: #6c757d;
+  --grey-60: #adb5bd;
+  --grey-50: #ced4da;
+  --grey-40: #dee2e6;
+  --grey-30: #e9ecef;
+  --grey-20: #f8f9fa;
+  --grey-10: #f8f9fa;
+  --grey-0: #ffffff;
+
+  /* System Colors - Blues */
+  --blue-100: #0f1b2d;
+  --blue-90: #10243e;
+  --blue-80: #0f3058;
+  --blue-70: #0d3868;
+  --blue-60: #0a4481;
+  --blue-50: #3168f6;
+  --blue-40: #0070f3;
+  --blue-30: #0070f3;
+  --blue-20: #0091ff;
+  --blue-10: #eaf6ff;
+
+  /* System Colors - Greens */
+  --green-100: #0b2211;
+  --green-90: #0f2c17;
+  --green-80: #11351b;
+  --green-70: #0c461b;
+  --green-60: #126427;
+  --green-50: #1a9338;
+  --green-40: #46a758;
+  --green-30: #388e4a;
+  --green-20: #63c174;
+  --green-10: #e5fbeb;
+
+  /* System Colors - Reds */
+  --red-100: #2a1314;
+  --red-90: #3d1719;
+  --red-80: #551a1e;
+  --red-70: #671e22;
+  --red-60: #822025;
+  --red-50: #e5484d;
+  --red-40: #e5484d;
+  --red-30: #da3036;
+  --red-20: #ff6369;
+  --red-10: #feecee;
+
+  /* System Colors - Ambers */
+  --amber-100: #271700;
+  --amber-90: #341c00;
+  --amber-80: #4a2900;
+  --amber-70: #573300;
+  --amber-60: #693f05;
+  --amber-50: #e79c13;
+  --amber-40: #ffb224;
+  --amber-30: #ff990a;
+  --amber-20: #f1a10d;
+  --amber-10: #fef3dd;
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--grey-200);
+  color: var(--grey-20);
+  line-height: 1.5;
+}
+
+/* ========================================
+   TYPOGRAPHY UTILITIES
+   ======================================== */
+
+.display-40 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 56px;
+}
+
+.display-32 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 40px;
+}
+
+.display-24 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 32px;
+}
+
+.display-20 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+.display-18 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+.display-16 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+.display-14 {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+}
+
+.copy-18 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.copy-16 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.copy-14 {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.copy-12 {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* ========================================
+   BUTTON COMPONENT
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+.btn-small {
+  padding: 6px 8px 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.btn-medium {
+  padding: 10px 10px 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.btn-large {
+  padding: 12px 14px 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.btn-primary {
+  background: var(--grey-20);
+  color: var(--grey-100);
+}
+
+.btn-primary:hover {
+  background: var(--grey-30);
+}
+
+.btn-primary:active {
+  background: var(--grey-40);
+}
+
+.btn-primary:disabled {
+  background: var(--grey-90);
+  color: var(--grey-60);
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--grey-20);
+  border: 1px solid var(--grey-80);
+}
+
+.btn-secondary:hover {
+  border-color: var(--grey-60);
+  color: var(--grey-30);
+}
+
+.btn-secondary:disabled {
+  border-color: var(--grey-90);
+  color: var(--grey-60);
+  cursor: not-allowed;
+}
+
+.btn-destructive {
+  background: var(--red-50);
+  color: var(--grey-20);
+}
+
+.btn-destructive:hover {
+  background: var(--red-40);
+}
+
+.btn-destructive:disabled {
+  background: var(--grey-90);
+  color: var(--grey-60);
+  cursor: not-allowed;
+}
+
+.btn-success {
+  background: var(--green-50);
+  color: var(--grey-20);
+}
+
+.btn-success:hover {
+  background: var(--green-40);
+}
+
+.btn-success:disabled {
+  background: var(--grey-90);
+  color: var(--grey-60);
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-icon svg {
+  width: 100%;
+  height: 100%;
+}

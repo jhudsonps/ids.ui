@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Kit - Design System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="site-container">
+    
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-logo">
+        <h1>UI Kit</h1>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Foundation</div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Introduction</a></li>
+          <li><a href="pages/colors.html" class="nav-link">Colors</a></li>
+          <li><a href="pages/typography.html" class="nav-link">Typography</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Components</div>
+        <ul class="nav-links">
+          <li><a href="pages/buttons.html" class="nav-link">Buttons</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="page-header">
+        <h1 class="page-title display-32">Design System</h1>
+        <p class="page-description copy-16">A comprehensive design system built with reusable components and design tokens.</p>
+      </div>
+
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title display-24">Getting Started</h2>
+          <p class="section-description">This design system provides a foundation for building consistent, accessible interfaces.</p>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <h3 class="display-18" style="margin-bottom: 16px;">What's Included</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px;">
+            
+            <div style="background: var(--grey-120); border: 1px solid var(--grey-90); border-radius: 8px; padding: 24px;">
+              <h4 class="display-16" style="margin-bottom: 8px; color: var(--grey-30);">Foundation</h4>
+              <p class="copy-14" style="color: var(--grey-60);">Color tokens, typography scales, and spacing systems that form the core of the design language.</p>
+              <a href="pages/colors.html" class="copy-14" style="color: var(--grey-40); margin-top: 12px; display: inline-block;">View colors →</a>
+            </div>
+
+            <div style="background: var(--grey-120); border: 1px solid var(--grey-90); border-radius: 8px; padding: 24px;">
+              <h4 class="display-16" style="margin-bottom: 8px; color: var(--grey-30);">Components</h4>
+              <p class="copy-14" style="color: var(--grey-60);">Pre-built, accessible components that can be used across your applications.</p>
+              <a href="pages/buttons.html" class="copy-14" style="color: var(--grey-40); margin-top: 12px; display: inline-block;">View components →</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title display-24">Installation</h2>
+          <p class="section-description">Get started by including the CSS in your project.</p>
+        </div>
+
+        <div class="code-block">
+          <code>&lt;link rel="stylesheet" href="css/design-system.css"&gt;</code>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
